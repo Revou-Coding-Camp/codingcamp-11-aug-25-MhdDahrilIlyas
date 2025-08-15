@@ -1,0 +1,106 @@
+@media screen and (min-width: 575px) {
+    
+}
+
+@media screen and (min-width: 769px) {
+    header .humberger-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+}
+
+@media screen and (min-width: 1299px) {
+    
+}
+
+/* ----------- */
+
+@media screen and (max-width: 1299px) {
+    
+}
+
+@media screen and (max-width: 900px) {
+    .section-portfolio .portfolio-list > .portfolio-item {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: calc(100vh - 100%);
+        width: 15rem;
+        padding: 24px;
+        background-color: var(--darkslate-gray);
+        
+    }
+    header .navbar.active {
+        display: block;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    header .navbar > .nav-link {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* section message us */
+    .section-messageus .form-content {
+        flex-wrap: wrap;
+    }
+    .section-messageus .form-content > .form-input, 
+    .section-messageus .form-content > .form-output {
+        width: 100%;
+    }
+
+    /* banner */
+    .section-banner > .container > .banner-text,
+    .section-banner > .container > .banner-img {
+        width: 100%;
+    }
+    .section-banner .banner-img figure,
+    .section-aboutme .about-img figure {
+    width: 350px;
+    height: 350px;
+    }
+
+    .section-banner > .container,
+    .section-aboutme > .container {
+        flex-direction: column;
+    }
+
+    .section-banner .banner-img {
+        justify-content: center;
+    }
+
+    .section-banner .banner-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-portfolio .portfolio-list > .portfolio-item {
+        width: 100%;
+    }
+
+    .section-aboutme .about-img {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 428px) {
+    .section-banner .banner-img figure,
+    .section-aboutme .about-img figure {
+    width: 280px;
+    height: 280px;
+    }
+}

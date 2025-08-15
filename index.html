@@ -3,33 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Dahril</title>
-
-    <!-- Tailwindcss CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>RevoU-Portfolio</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css"> <!-- css style -->
+    <link rel="stylesheet" href="css/fonts.css"> <!-- css font -->
+    <link rel="stylesheet" href="css/responsive.css"> <!-- css responsive -->
 </head>
 <body>
-    
-    <!-- Main Header -->
-    <header>
 
+    <!-- Main Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <img src="images/logo-web.png" alt="logo-web">
+            </div>
+            <div class="navbar">
+                <ul class="nav-link">
+                    <li><a class="menu-link" href="#home">Home</a></li>
+                    <li><a class="menu-link" href="#about-me">About Me</a></li>
+                    <li><a class="menu-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="menu-link" href="#message-us">Message Us</a></li>
+                </ul>
+            </div>
+            <div class="humberger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
 
+        <!-- Banner -->
+        <section id="home" class="section-banner">
+            <div class="container">
+                <div class="banner-text">
+                    <h1>Hello <strong id="user-greeting">User</strong>, </h1>
+                    <h2>Welcome to my website.</h2>
+                    <p>I’m currently learning and exploring the world of programming, building projects one line of code at a time</p>
+                </div>
+                <div class="banner-img">
+                    <figure>
+                        <img src="images/banner-img.png" alt="banner-images">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me" class="section-aboutme">
+            <div class="container">
+                <div class="about-img">
+                    <figure>
+                        <img src="images/about-img.png" alt="about-img">
+                    </figure>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi, I’m Mhd Dahril Ilyas. I’m a fresh graduate who is currently on an exciting journey to become a Software Engineer. I have started my path by learning the fundamentals of web development — HTML, CSS, and JavaScript. For me, coding is not just about writing lines of code, but about creating solutions that are functional, efficient, and user-friendly.</p>
+                    <!-- <div class="sosmed">
+
+                    </div> -->
+                    <div class="sosmed">
+                        <figure>
+                            <img src="images/facebook.svg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="images/instagram.svg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="images/youtube.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="section-portfolio">
+            <div class="container">
+                <div class="portfolio-text">
+                    <h2>Portfolio</h2>
+                    <p>Berikut projek yang sudah pernah saya buat, namun belum di publis karna ini harnya projek praktek exercise.</p>
+                </div>
+                <div class="portfolio-list">
+                    <div class="portfolio-item">
+                        <div class="portfolio-wrapper">
+                            <figure>
+                                <img src="images/web-clarity.png" alt="web-clarity">
+                            </figure>
+                            <div class="list-text">
+                                <h3>Web Clarity</h3>
+                                <p>Web Clarity ini merupakan landing page yang dibuat menggunakan CMS yaitu Wordpress, serta hardcode dibagian HTML, CSS, JavaScript.</p>
+                            </div>
+                            <button>View</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-wrapper">
+                            <figure>
+                                <img src="images/web-cimory.png" alt="web-cimory">
+                            </figure>
+                            <div class="list-text">
+                                <h3>Web Cimory</h3>
+                                <p>Web Cimory ini merupakan landing page yang dibuat hanya menggunakan HTML, CSS, JavaScript.</p>
+                            </div>
+                            <button>View</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-wrapper">
+                            <figure>
+                                <img src="images/web-galleryCar.png" alt="web-galleryCar">
+                            </figure>
+                            <div class="list-text">
+                                <h3>Web Gallery Car</h3>
+                                <p>Web Gallery Car merupakan landing page yang dibuat menggunakan CMS yaitu Wordpress, serta hardcode dibagian HTML, CSS, JavaScript, dan menggunakan library js Slick slider.</p>
+                            </div>
+                            <button>View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message US -->
+        <section id="message-us" class="section-messageus">
+            <div class="container">
+                <div class="heading">
+                    <h2>Message Us</h2>
+                </div>
+                <div class="form-content">
+                    <div class="form-input">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" id="nama" class="nama" name="nama" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal-lahir">Tanggal Lahir</label>
+                                <input type="date" id="tanggal-lahir" class="tanggal-lahir" name="tanggal-lahir" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Jenis Kelamin</label>
+                                <div class="input-radio">
+                                    <input type="radio" id="Laki-laki" name="gender" value="Laki-laki"><label for="Laki-laki">Laki-laki</label>
+                                    <input type="radio" id="Perempuan" name="gender" value="Perempuan"><label for="Perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <textarea name="pesan" id="pesan" class="pesan"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="sendValue">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-output">
+                        <div class="output-group">
+                            <label for="">Nama      :</label>
+                            <p id="nama-output" class="nama-output">...</p>
+                        </div>
+                        <div class="output-group">
+                            <label for="">Tanggal Lahir :</label>
+                            <p id="tanggal-lahir-output" class="tanggal-lahir-output">...</p>
+                        </div>
+                        <div class="output-group">
+                            <label for="">Jenis Kelamin :</label>
+                            <p id="jenis-kelamin-output" class="jenis-kelamin-output">...</p>
+                        </div>
+                        <div class="output-group">
+                            <label for="">Pesan     :</label>
+                            <p id="pesan-output" class="pesan-output">...</p>
+                        </div>
+                        <div class="output-group">
+                            <label for="">Current Time  :</label>
+                            <p id="time-output" class="time-output">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer>
-
+        <div class="container">
+            <p>&copy;Copyright 2025 MhdDahrilIlyas. All rights reserved.</p>
+        </div>
     </footer>
-    
+
     <!-- JS External -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
